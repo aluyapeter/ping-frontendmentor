@@ -33,9 +33,10 @@
   <div class="email-cont">
     <form id="emailForm" onsubmit="return validateEmail()" novalidate>
       <!-- <label for="email" class="input-sec">Email:</label> -->
-      <input type="email" id="email" name="email" required placeholder="Your email address...">
-      <br>
-      <span id="error-message">Please provide a valid email address</span>
+      <div class="input-error-cont">
+        <input type="email" id="email" name="email" required placeholder="Your email address...">
+        <span id="error-message">Please provide a valid email address</span>
+      </div>
       <input type="submit" value="Notify Me" class="notify-me-btn">
     </form>
   </div>

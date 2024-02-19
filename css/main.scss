@@ -45,6 +45,8 @@ body {
         width: 80%;
         margin: 0 auto;
         text-align: center;
+        display: flex;
+        justify-content: center;
 
         #email {
             margin-top: 30px;
@@ -64,7 +66,7 @@ body {
         }
 
         .notify-me-btn {
-            border: 1px solid $blue;
+            border: none;
             padding: 11px 115px;
             border-radius: 50px;
             margin-top: 15px;
@@ -89,7 +91,7 @@ body {
         text-align: center;
 
         .icons {
-            border: 1px solid $gray;
+            border: 1px solid $gray-border;
             border-radius: 50px;
             padding: 8px;
             margin: 5px;
@@ -124,3 +126,152 @@ body {
     }
 }
 
+
+@media screen and (min-width: 768px) {
+    body {
+        // <uniquifier>: Use a uniquifier for the class name
+    
+        font-family: "Libre Franklin", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    
+        // background-color: blue;
+        .main {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+    
+            .heading-txt {
+                font-size: 20px;
+                font-weight: 700;
+                padding-top: 90px;
+    
+                .blue-dot {
+                    color: $blue;
+                }
+            }
+    
+            .launch-txt {
+                padding-top: 35px;
+                font-weight: 300;
+                color: $gray;
+    
+                .soon-txt {
+                    font-weight: 700;
+                    color: $default;
+                }
+            }
+    
+            .subscribe-txt {
+                padding-top: 20px;
+            }
+        
+        }
+    
+        .email-cont {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+            #emailForm {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 25px;
+            }
+
+
+            #email {
+                margin-top: 0px;
+                border: 1px solid $blue;
+                padding: 11px 100px 11px 30px;
+                border-radius: 50px;
+            }
+    
+            
+    
+            input[type="email"]::placeholder {
+                color: $gray;
+                opacity: 0.5;
+            }
+    
+            #error-message {
+                color: $light-red;
+                display: none;
+            }
+    
+            .notify-me-btn {
+                border: none;
+                padding: 11px 50px;
+                border-radius: 50px;
+                margin-top: 0px;
+                margin-left: 10px;
+                background-color: $blue;
+                color: $white;
+
+                &:hover {
+                    background-color: $pale-blue;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .img-cont {
+            width: 60%;
+            margin: 60px auto;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        .social-icons-cont {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 100px;
+            text-align: center;
+            
+    
+            .icons {
+                border: 1px solid $gray-border;
+                border-radius: 50px;
+                padding: 8px;
+                margin: 5px;
+                color: $blue;
+                transition: background-color 0.8s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+    
+            .facebook-icon {
+                border-radius: 50px;
+                padding: 8px 12px;
+            }
+    
+            .instagram-icon {
+                padding: 8px 10px;
+                border-radius: 50px;
+            }
+        }
+    
+        footer {
+            margin-top: 25px;
+            text-align: center;
+    
+            .footer-txt {
+                font-size: 12px;
+                color: $gray;
+            }
+        }
+    
+        .attribution {
+            font-size: 11px; text-align: center;
+    
+            a { color: hsl(228, 45%, 44%); }
+        }
+    }
+}

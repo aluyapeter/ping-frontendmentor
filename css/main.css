@@ -38,6 +38,8 @@ body .email-cont {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 body .email-cont #email {
   margin-top: 30px;
@@ -58,7 +60,7 @@ body .email-cont #error-message {
   display: none;
 }
 body .email-cont .notify-me-btn {
-  border: 1px solid hsl(223, 87%, 63%);
+  border: none;
   padding: 11px 115px;
   border-radius: 50px;
   margin-top: 15px;
@@ -79,7 +81,7 @@ body .social-icons-cont {
   text-align: center;
 }
 body .social-icons-cont .icons {
-  border: 1px solid hsl(0, 0%, 59%);
+  border: 1px solid rgba(225, 225, 225, 0.8);
   border-radius: 50px;
   padding: 8px;
   margin: 5px;
@@ -107,4 +109,128 @@ body .attribution {
 }
 body .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  body .main {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .main .heading-txt {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 90px;
+  }
+  body .main .heading-txt .blue-dot {
+    color: hsl(223, 87%, 63%);
+  }
+  body .main .launch-txt {
+    padding-top: 35px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+  }
+  body .main .launch-txt .soon-txt {
+    font-weight: 700;
+    color: black;
+  }
+  body .main .subscribe-txt {
+    padding-top: 20px;
+  }
+  body .email-cont {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .email-cont #emailForm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 25px;
+  }
+  body .email-cont #email {
+    margin-top: 0px;
+    border: 1px solid hsl(223, 87%, 63%);
+    padding: 11px 100px 11px 30px;
+    border-radius: 50px;
+  }
+  body .email-cont input[type=email]::-moz-placeholder {
+    color: hsl(0, 0%, 59%);
+    opacity: 0.5;
+  }
+  body .email-cont input[type=email]::placeholder {
+    color: hsl(0, 0%, 59%);
+    opacity: 0.5;
+  }
+  body .email-cont #error-message {
+    color: hsl(354, 100%, 66%);
+    display: none;
+  }
+  body .email-cont .notify-me-btn {
+    border: none;
+    padding: 11px 50px;
+    border-radius: 50px;
+    margin-top: 0px;
+    margin-left: 10px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+  }
+  body .email-cont .notify-me-btn:hover {
+    background-color: hsl(223, 100%, 88%);
+    cursor: pointer;
+  }
+  body .img-cont {
+    width: 60%;
+    margin: 60px auto;
+  }
+  body .img-cont img {
+    width: 100%;
+  }
+  body .social-icons-cont {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+  body .social-icons-cont .icons {
+    border: 1px solid rgba(225, 225, 225, 0.8);
+    border-radius: 50px;
+    padding: 8px;
+    margin: 5px;
+    color: hsl(223, 87%, 63%);
+    transition: background-color 0.8s;
+    cursor: pointer;
+  }
+  body .social-icons-cont .icons:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+  }
+  body .social-icons-cont .facebook-icon {
+    border-radius: 50px;
+    padding: 8px 12px;
+  }
+  body .social-icons-cont .instagram-icon {
+    padding: 8px 10px;
+    border-radius: 50px;
+  }
+  body footer {
+    margin-top: 25px;
+    text-align: center;
+  }
+  body footer .footer-txt {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+  }
+  body .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  body .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }/*# sourceMappingURL=main.css.map */
