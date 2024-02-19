@@ -7,7 +7,8 @@
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(emailValue)) {
-        errorMessage.style.display = 'block'; 
+        errorMessage.style.display = 'block';
+        emailInput.style = 'border: 1px solid red';
         return false;
     } else {
         errorMessage.style.display = 'none';
