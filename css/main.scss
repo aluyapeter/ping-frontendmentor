@@ -1,0 +1,92 @@
+@import './resets';
+@import './variables';
+
+body {
+    // <uniquifier>: Use a uniquifier for the class name
+
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    // background-color: blue;
+    .main {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        .heading-txt {
+            font-size: 20px;
+            font-weight: 700;
+            padding-top: 90px;
+
+            .blue-dot {
+                color: $blue;
+            }
+        }
+
+        .launch-txt {
+            padding-top: 35px;
+            font-weight: 300;
+            color: $gray;
+
+            .soon-txt {
+                font-weight: 700;
+                color: $default;
+            }
+        }
+
+        .subscribe-txt {
+            padding-top: 20px;
+        }
+    
+    }
+
+    .email-cont {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        #email {
+            margin-top: 30px;
+            border: 1px solid $blue;
+            padding: 11px 100px 11px 30px;
+            border-radius: 50px;
+        }
+
+        input[type="email"]::placeholder {
+            color: $gray;
+            opacity: 0.5;
+            // margin-left: 80px;
+        }
+
+        #error-message {
+            color: $light-red;
+            display: none;
+        }
+
+        .notify-me-btn {
+            border: 1px solid $blue;
+            padding: 11px 120px;
+            border-radius: 50px;
+            margin-top: 15px;
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+    .img-cont {
+        width: 90%;
+        margin: 60px auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .attribution {
+        font-size: 11px; text-align: center;
+
+        a { color: hsl(228, 45%, 44%); }
+    }
+}
+

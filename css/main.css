@@ -1,1 +1,81 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body .main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+body .main .heading-txt {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 90px;
+}
+body .main .heading-txt .blue-dot {
+  color: hsl(223, 87%, 63%);
+}
+body .main .launch-txt {
+  padding-top: 35px;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+body .main .launch-txt .soon-txt {
+  font-weight: 700;
+  color: black;
+}
+body .main .subscribe-txt {
+  padding-top: 20px;
+}
+body .email-cont {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+body .email-cont #email {
+  margin-top: 30px;
+  border: 1px solid hsl(223, 87%, 63%);
+  padding: 11px 100px 11px 30px;
+  border-radius: 50px;
+}
+body .email-cont input[type=email]::-moz-placeholder {
+  color: hsl(0, 0%, 59%);
+  opacity: 0.5;
+}
+body .email-cont input[type=email]::placeholder {
+  color: hsl(0, 0%, 59%);
+  opacity: 0.5;
+}
+body .email-cont #error-message {
+  color: hsl(354, 100%, 66%);
+  display: none;
+}
+body .email-cont .notify-me-btn {
+  border: 1px solid hsl(223, 87%, 63%);
+  padding: 11px 120px;
+  border-radius: 50px;
+  margin-top: 15px;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+body .img-cont {
+  width: 90%;
+  margin: 60px auto;
+}
+body .img-cont img {
+  width: 100%;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
